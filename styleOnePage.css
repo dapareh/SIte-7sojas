@@ -1,0 +1,620 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*HOME*/
+#sessao_home
+{
+    background-image: url("img_one_page/fundoSoja.png");
+    background-size: cover;
+    height: 100vh;
+    background-position: top;
+}
+
+.navbar
+{
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    height: 10%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1%;
+    padding: 10px;
+    z-index: 1000;
+    background-color:#081f0d;
+}
+
+.navbar img
+{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 10%;
+}
+
+.navbar a
+{
+
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.itens_navbar
+{
+    display: flex;
+    width: 65%;
+    height: 100%;
+    list-style: none;
+    color:#FFF;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 21px;
+    text-align: left;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#btn_login
+{
+    color: #dff798;
+    cursor: pointer;
+}
+
+.conteudo_home
+{
+    display: flex;
+    width: 30%;
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.conteudo_home img
+{
+    margin-top: 50%;
+}
+
+.conteudo_home a
+{
+    background-color: #081f0d;
+    text-decoration: none; 
+    color: #FFF;
+    background-color: #081f0d;
+    font-size: 16px;
+    padding: 2.5% 15%;
+    width: 55%;
+    color: #FFF;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.conteudo_home a:hover
+{
+    transform: scale(1.04);
+}
+
+#btn_cadastro
+{
+    color: #FFF;
+    padding: 10px 20px;
+    background-color: #09420D;
+    width: 12%;
+    height:24%;
+    border-radius: 22px;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#btn_cadastro:hover
+{
+    transform: scale(1.04);
+}
+
+#btn_cadastro img
+{
+    width: 17%;
+    height: 125%;
+}
+
+
+
+/*SOBRE NÓS*/
+
+#sessao_sobre_nos
+{
+    background-image: linear-gradient(to bottom, #063b0b, #000); 
+    height: 98vh;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo_sobre_nos
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.texto_sobre_nos
+{
+    color:#FFF;
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+}
+
+.texto_sobre_nos h1 
+{
+    margin-bottom: 5%;
+}
+
+.texto_sobre_nos p {
+    text-align: justify; 
+    font-size: 19px;
+    margin-bottom: 4%;
+}
+
+
+
+/*SENSORES*/
+
+#sessao_sensores
+{
+    background-image: linear-gradient(to bottom, #010c02, #000);
+    display: flex;
+    height: 90vh;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+#sessao_sensores img
+{
+    height: 40%;
+    border-radius: 12%;
+    margin-bottom: 10%;
+}
+
+.texto_sensores
+{
+    display: flex;
+    color: #FFF;
+    width: 34%;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10%;
+    margin-left: 8%;
+}
+
+.texto_sensores p {
+    text-align: justify; 
+    font-size: 18px;
+    margin-top: 2%;
+}
+
+.texto_sensores h1 {
+    margin-bottom: 8%;
+}
+
+.primeiro_bloco
+{
+    display: flex;
+    width: 12%;
+    align-items: center;
+
+}
+
+.segundo_bloco
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.negrito
+{
+    font-weight: bold;
+}
+
+
+/*Vantagens*/
+#sessao_vantagem
+{
+    background-image: linear-gradient(to bottom, #010c02, #000);
+    padding-top: 100px;
+}
+
+.card
+{
+    background-color: #09420D;
+    width: 20%;
+    height: 30%;
+    padding: 2%;
+    border-radius: 4%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h3
+{
+   color: #A7C355;
+   padding: 0;
+   margin: 0;
+}
+
+.card:hover
+{
+    transform: scale(1.05);
+}
+
+.img_card
+{
+    width: 4cm;
+    height: 4cm;
+}
+
+#titulo img
+{
+    width: 8%;
+    height: 8%;
+}
+
+#titulo
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    color: #FFF;
+}
+
+.area_cards
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.texto_card
+{
+    width: 270px;
+    height: 125px;
+    text-align:inherit;
+    text-align:start;
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/*Calculadora de prejuízo*/
+#sessao_calculadora_prejuizo
+{
+    background-image: url("img_one_page/img_calculadora/fundo.png");
+    background-position: cover;  
+    background-size: 100%;  
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.titleCalculadora
+{
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 900;
+}
+
+.propriedades 
+{
+    background-color: transparent;
+    border-radius: 10px;  
+    padding: 20px; 
+    width: 700px;
+    display: flex;
+    color: #ffffff;
+}
+
+.logoCalculadora
+{
+    width: 10vw;
+    margin-left: 80px;
+}
+
+.topicos_esquerda {
+    border-radius: 10px;
+    padding: 10px;
+    width: 340px;
+}
+
+/* Aplica 20px de margem na parte de baixo */
+.conteudoCalculadora {
+    margin-bottom: 20px;
+}
+
+/* Detalhes sobre as inputs */
+.conteudoCalculadora input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #36615f; /* Estiliza somente a borda inferior para que fique como uma linha */
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    outline: none; /* Define que não terá borda na input */
+    color: white;
+}
+
+.topicos_direita
+{
+    border-radius: 10px;
+    padding: 20px; /* Distãncia da bordao conteudo dentro */
+    width: 340px;
+    display: flex;
+    flex-direction: end;
+    align-items: center;
+    justify-content: center;
+}
+
+#desenhoCalculadora
+{
+    height: 300px;
+    width: 300px;
+}
+
+/* Fução que faz a imagem ficar escondida */
+.hidden {
+    display: none;
+}
+
+.result-box {
+    background-color: rgba(9, 66, 13, 0.9);
+    opacity: 1;
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    width: 75%; 
+    max-height: 100px;
+    animation: countUp 1.5s ease-in-out; /* Aplica a animação countUp com duração de 1.5 segundos e efeito de entrada e saída suave */
+}
+
+@keyframes countUp 
+{
+    from 
+    {
+        opacity: 0; /* Começa com opacidade zero */
+        transform: translateY(50px); /* Move para baixo */
+    }
+    to 
+    {
+        opacity: 1; /* Termina com opacidade total */
+        transform: translateY(0); /* Não há deslocamento vertical */
+    }
+}
+
+.result-box h3 {
+    font-size: 16px; 
+    color: #fff; 
+    margin-bottom: 10px; 
+}
+
+.result-box p {
+    font-size: 16px; 
+    color: #fff; 
+}
+
+.buttonCalculadora
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #77BD1F;
+    color: white;
+    padding: 10px;    /* Distãncia da borda do botão para o que esta escrito nele */
+    border-radius: 15px;  /* Arredonda a borda em 15px */
+    margin-left: 70px;  /* Cria uma margem do lado esqeurdo de 70px */
+    font-weight: 900; /* Torna a grossura da fonte em bold 900 */
+}
+
+.buttonCalculadora:hover
+{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+/*CONTATO*/
+
+#sessao_contato
+{
+    background-image: linear-gradient(to bottom, #021403, #000); 
+    height: 94vh;
+    color: #FFF;
+    padding-top: 40px;
+}
+
+.header
+{
+    display: flex;
+    height: 15%;
+    padding-top: 4%;
+    align-items: center;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+
+.header h1
+{
+    width: 85%;
+}
+
+.formulario
+{
+    display: flex;
+    margin-left: 10%;
+    margin-left: 10%;
+}
+
+.item_esquerda
+{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    font-size: 18px;
+}
+
+.item_esquerda p
+{
+    margin: 0;
+    margin-bottom: 1%;
+}
+
+.item_esquerda a
+{
+    color: #498C58;
+}
+
+.campo
+{
+    display: flex;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.campo p
+{
+    margin-right: 1%;
+}
+
+.campo input
+{
+    background: linear-gradient(90deg, rgba(167, 195, 85, 0.08) 0%, rgba(80, 93, 41, 0.26) 100%);
+    color: #fff; 
+    border: none; 
+    padding: 5px 8px;
+    width: 100%;
+}
+
+.campo input:focus
+{
+    outline: none; 
+}
+
+#campo_nome p
+{
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+.item_direita
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    width: 35%;
+    justify-content: space-around;
+    margin-left: 14%;
+    align-items: end;
+
+}
+
+.item_direita p
+{
+   text-align: end;
+}
+
+
+#input_mensagem {
+    background: linear-gradient(90deg, rgba(167, 195, 85, 0.08) 0%, rgba(80, 93, 41, 0.26) 100%);
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    width: 100%;
+    height: 42%; 
+    resize: none; 
+}
+
+
+#input_mensagem:focus
+{
+    outline: none; 
+}
+
+
+.item_direita button 
+{
+    margin-top: 10%;
+    background-color: #09420D; 
+    color: #fff; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: 0.3s;
+    width: 54%;
+}
+
+.item_direita button:hover
+{
+    transform: scale(1.04);
+}
+
+
+/*RODAPÉ*/
+
+#sessao_rodape
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #000; 
+    height: 32vh;
+    color: #FFF;
+    align-items: center;
+}
+
+.imagem_redes
+{
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40%;
+    width: 50%;
+}
+
+.imagem_redes img
+{
+    width: 4rem;
+}
+
+#direitos
+{
+    margin-top: 2%;
+    color: #515151;
+    font-weight: bold;
+    font-size: 16px;
+}
+
